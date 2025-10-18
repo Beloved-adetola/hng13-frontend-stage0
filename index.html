@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card | Adetola Beloved</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+    <article class="profile-card" data-testid="test-profile-card">
+        <figure class="avatar-section">
+            <img src="./assets/Beloved Adetola.jpg" alt="Profile photo of Adetola Beloved"
+                data-testid="test-user-avatar">
+        </figure>
+        <section class="profile-details">
+            <header>
+                <h2 data-testid="test-user-name" aria-label="user name">Adetola Beloved</h2>
+            </header>
+            <!-- Short Biography -->
+            <p data-testid="test-user-bio" aria-label="user bio">I am a software engineer with a passion for building
+                web
+                applications that blend creativity, logic, and impact.</p>
+
+            <section class="info-section">
+                <!-- Hobbies -->
+                <section class="info">
+                    <h3>Hobbies</h3>
+                    <ul data-testid="test-user-hobbies">
+                        <li>Reading</li>
+                        <li>Coding</li>
+                        <li>Watching Anime/Movies</li>
+                        <li>Gaming</li>
+                        <li>Football</li>
+                    </ul>
+                </section>
+                <!-- Dislikes -->
+                <section class="info">
+                    <h3>Dislikes</h3>
+                    <ul data-testid="test-user-dislikes">
+                        <li>Lies</li>
+                        <li>Cheating</li>
+                        <li>Injustice</li>
+                        <li>Racism</li>
+                        <li>History</li>
+                    </ul>
+                </section>
+            </section>
+            <!-- Social Links -->
+            <nav aria-label="social links">
+                <ul class="social-links" data-testid="test-user-social-links">
+                    <li><a href="https://github.com/Beloved-adetola" target="_blank" rel="noopener noreferrer"
+                            data-testid="test-user-social-github"><img
+                                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
+                                alt="GitHub logo" />
+                            GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/beloved-adetola-a92a2b289/" target="_blank"
+                            rel="noopener noreferrer" data-testid="test-user-social-linkedin"><img
+                                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+                                alt="LinkedIn logo" />LinkedIn</a>
+                    </li>
+                    <li><a href="https://instagram.com/adetola-beloved" target="_blank" rel="noopener noreferrer"
+                            data-testid="test-user-social-instagram"><img
+                                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+                                alt="Instagram logo" />Instagram</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Current Time -->
+            <div class="time-container">
+                <strong>Current Time (ms): </strong>
+                <span data-testid="test-user-time"></span>
+            </div>
+        </section>
+    </article>
+
+    <script src="./assets/index.js"></script>
+
+</body>
+
+</html>
