@@ -22,7 +22,7 @@ Follow the steps below to run the project on your local machine:
 
 1. Clone the repository:
 
-   - git clone https://github.com/your-username/profile-card.git
+   - git clone https://github.com/Beloved-adetola/hng13-frontend-stage0.git
 
 3. Navigate to the project folder
    - cd stage0
