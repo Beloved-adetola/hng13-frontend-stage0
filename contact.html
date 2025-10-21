@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/contact.css" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <span><a href="/index.html">←</a></span>
+            <h2>Contact Us</h2>
+        </header>
+
+        <form id="contact-form" novalidate>
+            <div>
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" aria-describedby="error-name" data-testid="test-contact-name"
+                    required />
+                <p id="error-name" class="error" data-testid="test-contact-error-name"></p>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" aria-describedby="error-email" data-testid="test-contact-email"
+                    required />
+                <p id="error-email" class="error" data-testid="test-contact-error-email"></p>
+            </div>
+
+            <div>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" aria-describedby="error-subject" data-testid="test-contact-subject"
+                    required />
+                <p id="error-subject" class="error" data-testid="test-contact-error-subject"></p>
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" cols="20" rows="4" aria-describedby="error-message"
+                    data-testid="test-contact-message" required></textarea>
+                <p id="error-message" class="error" data-testid="test-contact-error-message"></p>
+            </div>
+
+            <button type="submit" data-testid="test-contact-submit">Submit</button>
+            <p id="success-message" class="success" data-testid="test-contact-success" hidden>
+                ✅ Thank you! Your message has been sent successfully.
+            </p>
+        </form>
+    </main>
+
+    <script src="./assets/contact.js"></script>
+</body>
+
+</html>
